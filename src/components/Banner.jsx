@@ -1,4 +1,4 @@
-import './../style/banner.scss'
+import './../style/components/banner.scss'
 
 const Banner = () => {
    return (

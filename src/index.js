@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './components/root/Root'
-import './style/root.scss'
+import Home from './pages/home/Home';
+import './style/base/reset.scss';
+import './style/pages/home.scss';
+import './style/utils/mediaQ.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );

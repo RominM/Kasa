@@ -1,0 +1,27 @@
+@import './../base/module.scss';
+
+.home-header {
+   display: flex;
+   justify-content: space-between;
+   height: 125px;
+   line-height: 125px;
+   .home-kasa-logo {
+      width: 250px;
+   }
+   .home-nav {
+      text-align: center;
+      width: 245px;
+      .home-header-ul {
+         display: flex;
+         justify-content: space-between;
+         .home-header-li {
+            font-family: $MainFont;
+            font-size: 1.5em;
+         }
+         .home-header-a {
+            color: #FF6060;
+         }
+      }
+   }
+}
+
