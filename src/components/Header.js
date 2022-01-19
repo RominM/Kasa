@@ -1,24 +1,26 @@
+import './../style/header.scss'
+
 const Header = () => {
-   return <>
+   return <header className='home-header'>
       <Logo />
       <Nav />
-   </>
+   </header>
 }
 
 export default Header
 
 const Logo = () => {
    return (
-      <img src="./../src/assets/logo_kasa.jpg" alt="kasa"></img>
+      <img className='home-kasa-logo' src={require("./../assets/logo_kasa.jpg")} alt="kasa" />
    )
 }
 
 const Nav = () => {
    return (
-   <nav>
-      <ul>
-         <li><a href="#">Accueil</a></li>
-         <li><a href="#">A propos</a></li>
+   <nav className='home-nav'>
+      <ul className='home-header-ul'>
+         <li className='home-header-li'><a href="#" className='home-header-a'>Accueil</a></li>
+         <li className='home-header-li'><a href="#" className='home-header-a'>A Propos</a></li>
       </ul>
    </nav>
    )

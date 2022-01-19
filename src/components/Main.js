@@ -1,12 +1,12 @@
-import './../style/li-location.css'
+import './../style/main.scss'
 const data = require('./../data/data.json')
 
 const Main = () => {
    return (
-      <main>
-         <ul>
+      <main className='home-main'>
+         <ul className="home-main-ul">
             {data.map(DATA => (
-               <li key={DATA.id} className='li-location'>{DATA.title}</li>
+               <li className='home-main-li' key={DATA.id} className='li-location'>{DATA.title}</li>
             ))}
          </ul>
       </main>
