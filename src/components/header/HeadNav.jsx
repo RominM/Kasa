@@ -1,18 +1,19 @@
 // import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const HeadNav = () => {
   return (
-    <nav className="home-nav">
-      <ul className="home-header-ul">
-        <li className="home-header-li">
-          <a href="/" className="home-header-a">
+    <nav className="head-nav">
+      <ul className="head-nav-ul">
+        <li className="head-nav-li">
+          <Link to="/" className="head-nav-link">
             Accueil
-          </a>
+          </Link>
         </li>
         <li className="home-header-li">
-          <a href="/apropos" className="home-header-a">
+          <Link to="/apropos" className="head-nav-link">
             A Propos
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

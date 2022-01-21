@@ -1,11 +1,11 @@
 import './header.scss';
-import Logo from './Logo';
+import HeadLogo from './HeadLogo';
 import HeadNav from './HeadNav';
 
 const Header = () => {
   return (
-    <header className="home-header">
-      <Logo />
+    <header className="header">
+      <HeadLogo />
       <HeadNav />
     </header>
   );

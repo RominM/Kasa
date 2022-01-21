@@ -1,0 +1,21 @@
+.footer {
+  background-color: #000;
+  height: 150px;
+  padding-top: 80px;
+  h2 {
+    display: block;
+    width: 250px;
+    margin: 0 auto 25px auto;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  .copyright {
+    display: block;
+    color: #fff;
+    width: 290px;
+    margin: auto;
+    font-size: 1.7vh;
+  }
+}
