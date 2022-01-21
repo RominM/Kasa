@@ -1,12 +1,12 @@
-import './banner.scss'
+import './banner.scss';
 
 const Banner = () => {
-   return (
-   <div className="banner">
-      <img src={require("./../../assets/background.png")} alt="bannière"></img>
+  return (
+    <div className="banner">
+      <img src={require('./../../assets/background.png')} alt="bannière" />
       <span className="gimmick">Chez Vous, partout et ailleurs</span>
-   </div>
-   ) 
-}
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;
