@@ -1,10 +1,14 @@
+// Libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
+// Components
 import Home from './pages/home/Home';
-import './style/base/reset.scss';
-import './style/pages/home.scss';
-import './style/utils/mediaQ.scss';
+// Style
+import './style/reset.scss';
+import './style/root.scss';
+import './style/mediaQ.scss';
 
+// render
 ReactDOM.render(
   <React.StrictMode>
     <Home />

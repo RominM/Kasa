@@ -1,18 +1,11 @@
 @media screen and (max-width: 1800px) {
-   #root {
-      padding: 30px 70px 30px 70px;
-   }
-
    .card {
       width: 37%;
    }
 }
 
-@media screen and (max-width: 1170px) {
-   #root {
-      padding: 0px;
-   }
 
+@media screen and (max-width: 1170px) {
    .gallery {
       padding: 0;
       .home-main-ul {

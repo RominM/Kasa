@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./../../components/Header";
-import Banner from "./../../components/Banner";
-import Main from "./../../components/Main";
+import Header from "./../../components/header/Header";
+import Banner from "./../../components/banner/Banner";
+import Main from "./../../components/main/Main";
 
 class Home extends React.Component{
   render() {
