@@ -10,7 +10,7 @@ const HeadNav = () => {
             Accueil
           </Link>
         </li>
-        <li className="home-header-li">
+        <li className="head-nav-li">
           <Link to="/apropos" className="head-nav-link">
             A Propos
           </Link>

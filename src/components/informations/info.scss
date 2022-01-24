@@ -1,0 +1,33 @@
+@import './../../style/module.scss';
+
+.hosting {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-family: $MainFont;
+  color: $MainColor;
+  h3 {
+    font-size: 4.1vh;
+  }
+  .location {
+    display: block;
+    font-size: 1.7vh;
+    padding: 15px 0;
+  }
+  .tags {
+    display: flex;
+    .tag {
+      background-color: $MainColor;
+      width: 220px;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 8px;
+    }
+  }
+  .host {
+    .host-name {
+      font-size: 1.7vh;
+    }
+  }
+}

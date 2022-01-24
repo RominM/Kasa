@@ -1,0 +1,20 @@
+@import './../../style/module.scss';
+
+.not-found {
+  color: $MainColor;
+  text-align: center;
+  font-family: $MainFont;
+  span {
+    display: block;
+    font-size: 35vw;
+  }
+  h1 {
+    font-size: 2vw;
+    padding: 60px;
+  }
+  .error-link {
+    font-size: 1.5em;
+    color: $MainColor;
+    text-decoration: underline;
+  }
+}
