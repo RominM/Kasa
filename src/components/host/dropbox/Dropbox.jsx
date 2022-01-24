@@ -1,6 +1,6 @@
 import React from 'react';
 import Description from './Description';
-import Facilities from './Facilities';
+import Facilities from './Equipments';
 
 export default function Dropbox() {
   return (
