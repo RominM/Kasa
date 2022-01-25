@@ -24,4 +24,4 @@ yarn-error.log*
 
 #config
 /.prettierrc
-/.eslintrc
+/.eslintrc.js
