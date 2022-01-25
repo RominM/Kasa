@@ -1,7 +1,6 @@
 import React from 'react';
 import Raiting from '../../components/host/Raiting';
 
-import Header from '../../components/header/Header';
 import Lightroom from '../../components/hero/Lightroom';
 import Infos from '../../components/host/Infos';
 
@@ -9,14 +8,15 @@ import Infos from '../../components/host/Infos';
 
 class Accomodation extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = {accomodation: {pictures: [], host:[], tags:[], equipements: []}}
+    super(props);
+    this.state = {
+      accomodation: { pictures: [], host: [], tags: [], equipements: [] },
+    };
   }
-  
+
   render() {
     return (
       <div>
-        <Header />
         <Lightroom />
         <Infos />
       </div>
