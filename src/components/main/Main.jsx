@@ -7,7 +7,9 @@ const Main = () => {
   return (
     <main className="home-main">
       <div className="gallery">
-        <Card />
+        <ul className="home-main-ul">
+          <Card />
+        </ul>
       </div>
     </main>
   );

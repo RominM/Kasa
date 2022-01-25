@@ -4,6 +4,7 @@ import Tags from './Tags';
 const data = require('../../data/data.json');
 
 export default function Hosting() {
+  const host = data.host;
   return (
     <div className="hosting">
       <div className="hosting-left">
@@ -13,7 +14,7 @@ export default function Hosting() {
       </div>
       <div className="hosting-right">
         <div className="host">
-          <span className="host-name">Alexendre Dumas</span>
+          <span className="host-name">{host.name}</span>
           <img src="" alt="" />
         </div>
         <div className="rating">{/* stars */}</div>
