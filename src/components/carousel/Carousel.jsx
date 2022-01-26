@@ -1,10 +1,12 @@
 import React from 'react';
-import './hero.scss';
+import './carousel.scss';
 
-export default function Lightroom() {
+const Carousel = () => {
   return (
     <div className="hero">
       <img src={require('./../../assets/background.png')} alt="" />
     </div>
   );
-}
+};
+
+export default Carousel;

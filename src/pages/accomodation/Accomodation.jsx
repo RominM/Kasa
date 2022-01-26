@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Header from '../../components/header/Header';
-import Lightroom from '../../components/hero/Lightroom';
-import Infos from '../../components/host/Infos';
+import React from 'react';
+import Carousel from '../../components/carousel/Carousel';
+import Hosting from '../../components/host/Hosting';
 
 // const data = require('../../data/data.json');
 
-export default function Accomodation() {
+const Accomodation = () => {
   return (
     <div>
-      <Header />
-      <Lightroom />
-      <Infos />
+      <Carousel />
+      <Hosting />
     </div>
   );
-}
+};
+
+export default Accomodation;

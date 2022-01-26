@@ -13,8 +13,10 @@
     padding: 60px;
   }
   .error-link {
+    display: block;
     font-size: 1.5em;
     color: $MainColor;
     text-decoration: underline;
+    margin-bottom: 200px;
   }
 }
