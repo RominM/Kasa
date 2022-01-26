@@ -13,6 +13,7 @@ import Error from './pages/error404/Error';
 import './style/reset.scss';
 import './style/root.scss';
 import './style/mediaQ.scss';
+import Rotate from './rotate';
 
 // render
 ReactDOM.render(
@@ -22,7 +23,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<AboutUs />} />
-        <Route path="/logement/*" element={<Accomodation />} />
+        <Route path="/logement" element={<Accomodation />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
@@ -30,3 +31,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+Rotate();

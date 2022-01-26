@@ -1,6 +1,5 @@
 import React from 'react';
-import Dropbox from '../dropbox/Dropbox';
-import './info.scss';
+import './host.scss';
 
 const data = require('../../data/data.json');
 
@@ -14,11 +13,11 @@ export default function hosting() {
           <h3>{data.title}</h3>
           <span className="location">{data.location}</span>
           <ul className="tags">
-            {tags.map((tag) => (
+            {/* {tags.map((tag) => (
               <li className="tag" key={tag}>
                 {tag}
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
         <div className="hosting-right">
@@ -29,7 +28,6 @@ export default function hosting() {
           <div className="rating">{/* rating */}</div>
         </div>
       </div>
-      <Dropbox />
     </section>
   );
 }

@@ -1,15 +1,23 @@
 import React from 'react';
 import Carousel from '../../components/carousel/Carousel';
-import Hosting from '../../components/host/Hosting';
-
-// const data = require('../../data/data.json');
+import Host from '../../components/host/Host';
+import Dropbox from '../../components/dropbox/Dropbox';
+import './accomodation.scss';
 
 const Accomodation = () => {
   return (
-    <div>
+    <>
       <Carousel />
-      <Hosting />
-    </div>
+      <Host />
+      <section className="host--section">
+        <div>
+          <Dropbox />
+        </div>
+        <div>
+          <Dropbox />
+        </div>
+      </section>
+    </>
   );
 };
 
