@@ -6,7 +6,7 @@ const data = require('../../data/data.json');
 export default function Hosting() {
   const host = data.host;
   return (
-    <div className="hosting">
+    <section className="hosting">
       <div className="hosting-left">
         <h3>{data.title}</h3>
         <span className="location">{data.location}</span>
@@ -19,6 +19,6 @@ export default function Hosting() {
         </div>
         <div className="rating">{/* stars */}</div>
       </div>
-    </div>
+    </section>
   );
 }
