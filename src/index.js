@@ -13,7 +13,6 @@ import Error from './pages/error404/Error';
 import './style/reset.scss';
 import './style/root.scss';
 import './style/mediaQ.scss';
-import Rotate from './rotate';
 
 // render
 ReactDOM.render(
@@ -32,4 +31,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-Rotate();
