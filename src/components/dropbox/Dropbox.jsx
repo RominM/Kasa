@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
 import './dropbox.scss';
 
 const Dropbox = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="dropbox" onClick={() => setIsOpen(false)}>
+    <div className="dropbox" >
       <div className="dropbox-head">
         <span className="dropbox-head__title">Title</span>
       </div>

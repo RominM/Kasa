@@ -1,16 +1,15 @@
 import React from 'react';
 import './host.scss';
 
-const data = require('../../data/data.json');
 
-export default function hosting() {
+export default function hosting({ accomodation }) {
   // const tags = data.tags;
 
   return (
     <section>
       <div className="hosting">
         <div className="hosting-left">
-          <h3>data.title</h3>
+          <h3>{accomodation.title}</h3>
           <span className="location">data.location</span>
           <ul className="tags">
             <li className='tag'>data.tag</li>
