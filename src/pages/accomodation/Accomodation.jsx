@@ -10,10 +10,10 @@ const Accomodation = () => {
       <Carousel />
       <Host />
       <section className="host--section">
-        <div>
+        <div className='dropbox-left'>
           <Dropbox />
         </div>
-        <div>
+        <div className='dropbox-right'>
           <Dropbox />
         </div>
       </section>

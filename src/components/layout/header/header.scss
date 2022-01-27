@@ -36,6 +36,9 @@
       .head-nav-link:hover::before {
         transform: scaleX(1);
       }
+      /*.head-nav-link:active, .head-nav-link:visited, .head-nav-link:focus {
+        text-decoration: underline;
+      }*/
     }
   }
 }

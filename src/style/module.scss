@@ -1,4 +1,15 @@
-$MainFont: Montserrat, 'Arial', 'sans-serif';
+@font-face {
+   font-family: 'Montserrat';
+   src: url(./../assets/fonts/Montserrat/static/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'MontserratBold';
+   src: url(./../assets/fonts/Montserrat/static/Montserrat-Bold.ttf) format('truetype');
+}
+
+$MainFont: 'Montserrat', 'Arial', 'sans-serif', 'inter';
+$BoldFont: 'MontserratBold', 'Arial', 'sans-serif', 'inter';
 
 $MainColor: #FF6060;
-$SmoothBg: #E5E5E5;
+$SmoothBg: #ececec;

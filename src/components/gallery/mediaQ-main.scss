@@ -1,19 +1,25 @@
-@media screen and (max-width: 1800px) {
+// @media screen and (max-width: 1800px) {
+//    .card {
+//       width: 37%;
+//    }
+// }
+
+
+// @media screen and (max-width: 1170px) {
+//    .gallery {
+//       padding: 0;
+//       .home-main-ul {
+//          justify-content: center;
+//          .card {
+//             width: 100%;
+//             margin: auto;
+//          }
+//       }
+//    }
+// }
+
+@media screen and (max-width: 1450px) {
    .card {
-      width: 37%;
-   }
-}
-
-
-@media screen and (max-width: 1170px) {
-   .gallery {
-      padding: 0;
-      .home-main-ul {
-         justify-content: center;
-         .card {
-            width: 100%;
-            margin: auto;
-         }
-      }
+      left: 50%;
    }
 }

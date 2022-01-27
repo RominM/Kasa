@@ -3,13 +3,16 @@
 .not-found {
   color: $MainColor;
   text-align: center;
+  margin-top: 100px;
   font-family: $MainFont;
   span {
     display: block;
-    font-size: 35vw;
+    font-size: 22vw;
+    font-family: $BoldFont;
   }
   h1 {
     font-size: 2vw;
+    margin-bottom: 100px;
     padding: 60px;
   }
   .error-link {

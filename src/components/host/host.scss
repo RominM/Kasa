@@ -17,7 +17,8 @@
     display: flex;
     .tag {
       background-color: $MainColor;
-      width: 220px;
+      width: 100px;
+      margin-right: 10px;
       color: #fff;
       text-align: center;
       padding: 5px;
@@ -25,8 +26,19 @@
     }
   }
   .host {
+    display: flex;
     .host-name {
       font-size: 1.7vh;
+    }
+    .host-pic {
+      width: 80px;
+      height: 80px;
+      border: solid;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
     }
   }
 }

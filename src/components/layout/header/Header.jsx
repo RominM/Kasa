@@ -8,7 +8,7 @@ const Header = () => {
         <h1>
           <img
             className="kasa-logo"
-            src={require('./../../../assets/logo_kasa.jpg')}
+            src={require('./../../../assets/images/logo_kasa.jpg')}
             alt="kasa"
           />
         </h1>

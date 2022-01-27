@@ -3,7 +3,7 @@ import './banner.scss';
 const Banner = () => {
   return (
     <div className="banner">
-      <img src={require('./../../assets/background.png')} alt="bannière" />
+      <img src={require('./../../assets/images/background.png')} alt="bannière" />
       <span className="gimmick">Chez Vous, partout et ailleurs</span>
     </div>
   );
