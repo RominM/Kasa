@@ -4,23 +4,23 @@ import Carousel from '../../components/carousel/Carousel';
 import Host from '../../components/host/Host';
 import Dropbox from '../../components/dropbox/Dropbox';
 import './accomodation.scss';
-import data from '../../data/data.json'
+import data from '../../data/data.json';
 
 const Accomodation = () => {
-  const DATA = useParams()
+  const DATA = useParams();
   const accId = DATA.id;
 
-  const setData = data.find(acc => acc.id === accId);
+  const setData = data.find((acc) => acc.id === accId);
 
   return (
     <>
-      <Carousel />
+      <Carousel setData={setData} />
       <Host setData={setData} />
       <section className="host--section">
-        <div className='dropbox-left'>
+        <div className="dropbox-left">
           <Dropbox />
         </div>
-        <div className='dropbox-right'>
+        <div className="dropbox-right">
           <Dropbox />
         </div>
       </section>

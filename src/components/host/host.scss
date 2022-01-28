@@ -17,11 +17,13 @@
     display: flex;
     .tag {
       background-color: $MainColor;
-      width: 100px;
+      width: auto;
+      height: 27px;
+      line-height: 27px;
+      padding: 0 13px;
       margin-right: 10px;
       color: #fff;
       text-align: center;
-      padding: 5px;
       border-radius: 8px;
     }
   }
@@ -30,15 +32,12 @@
     .host-name {
       font-size: 1.7vh;
     }
-    .host-pic {
+    .host-pic img {
       width: 80px;
       height: 80px;
       border: solid;
       border-radius: 50%;
       overflow: hidden;
-      img {
-        object-fit: cover;
-      }
     }
   }
 }

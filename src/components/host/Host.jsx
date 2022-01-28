@@ -2,9 +2,7 @@
 import React from 'react';
 import './host.scss';
 
-
 export default function hosting({ setData }) {
-
   return (
     <section>
       <div className="hosting">
@@ -22,8 +20,12 @@ export default function hosting({ setData }) {
         <div className="hosting-right">
           <div className="host">
             <span className="host-name">{setData.host.name}</span>
-            <div className='host-pic'>
-              <img src={setData.host.picture} alt="avatar hote" />
+            <div className="host-pic">
+              <img
+                src={setData.host.picture}
+                alt="avatar hote"
+                className="img"
+              />
             </div>
           </div>
           <div className="rating">{setData.rating}</div>
