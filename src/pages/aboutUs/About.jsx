@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropbox from './../../components/dropbox/Dropbox';
+import Accordion from './../../components/accordion/Accordion';
 import './about.scss';
 
 const AboutUs = () => {
@@ -28,11 +28,11 @@ const AboutUs = () => {
           alt="montagnes"
         />
       </div>
-      <div className="container-dropbox">
-        <Dropbox title="fiabilité">{fiability}</Dropbox>
-        <Dropbox title="respect">{respect}</Dropbox>
-        <Dropbox title="service">{service}</Dropbox>
-        <Dropbox title="sécurité">{responsability}</Dropbox>
+      <div className="container-accordion">
+        <Accordion title="fiabilité">{fiability}</Accordion>
+        <Accordion title="respect">{respect}</Accordion>
+        <Accordion title="service">{service}</Accordion>
+        <Accordion title="sécurité">{responsability}</Accordion>
       </div>
     </>
   );
