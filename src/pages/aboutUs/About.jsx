@@ -29,12 +29,10 @@ const AboutUs = () => {
         />
       </div>
       <div className="container-dropbox">
-        <Dropbox title="Fiabilité" content="">
-          {fiability}
-        </Dropbox>
-        <Dropbox title="Respect" content={respect} />
-        <Dropbox title="Service" content={service} />
-        <Dropbox title="Sécurité" content={responsability} />
+        <Dropbox title="Fiabilité">{fiability}</Dropbox>
+        <Dropbox title="Respect">{respect}</Dropbox>
+        <Dropbox title="Service">{service}</Dropbox>
+        <Dropbox title="Sécurité">{responsability}</Dropbox>
       </div>
     </>
   );

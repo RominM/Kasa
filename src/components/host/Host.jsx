@@ -11,7 +11,7 @@ export default function hosting({ setData }) {
   return (
     <section>
       <div className="hosting">
-        <div className="hosting-left">
+        <div>
           <h3>{setData.title}</h3>
           <span className="location">{setData.location}</span>
           <ul className="tags">
@@ -22,15 +22,11 @@ export default function hosting({ setData }) {
             ))}
           </ul>
         </div>
-        <div className="hosting-right">
+        <div>
           <div className="host">
             <span className="host-name">{setData.host.name}</span>
             <div className="host-pic">
-              <img
-                src={setData.host.picture}
-                alt="avatar hote"
-                className="img"
-              />
+              <img src={setData.host.picture} alt="avatar hote" />
             </div>
           </div>
           <div className="rating">

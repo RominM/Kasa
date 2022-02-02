@@ -18,10 +18,18 @@ const Accomodation = () => {
       <Host setData={setData} />
       <section className="host--section">
         <div className="dropbox-left">
-          <Dropbox />
+          <Dropbox title="description">
+            <p>{setData.description}</p>
+          </Dropbox>
         </div>
         <div className="dropbox-right">
-          <Dropbox>{setData.description}</Dropbox>
+          <Dropbox title="equipement">
+            <ul>
+              {setData.equipments.map((equipment, index) => (
+                <li key={equipment + index}>{equipment}</li>
+              ))}
+            </ul>
+          </Dropbox>
         </div>
       </section>
     </>

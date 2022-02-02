@@ -2,9 +2,11 @@
   display: flex;
   width: 100%;
   .dropbox-left {
-    margin: 0 50px 0 0;
+    margin-right: 50px;
+    width: 50%;
   }
   .dropbox-right {
-    margin: 0 0 0 50px;
+    margin-left: 50px;
+    width: 50%;
   }
 }

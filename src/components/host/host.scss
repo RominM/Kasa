@@ -30,7 +30,13 @@
   .host {
     display: flex;
     .host-name {
-      font-size: 1.7vh;
+      width: 100px;
+      display: block;
+      height: 60px;
+      line-height: 30px;
+      font-size: 2.1vh;
+      margin: 10px 15px;
+      text-align: end;
     }
     .host-pic img {
       width: 80px;
@@ -38,6 +44,12 @@
       border: solid;
       border-radius: 50%;
       overflow: hidden;
+    }
+  }
+  .rating {
+    text-align: right;
+    img {
+      margin: 5px;
     }
   }
 }
