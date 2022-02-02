@@ -23,7 +23,7 @@ const Accomodation = () => {
           </Dropbox>
         </div>
         <div className="dropbox-right">
-          <Dropbox title="equipement">
+          <Dropbox title="équipement">
             <ul>
               {setData.equipments.map((equipment, index) => (
                 <li key={equipment + index}>{equipment}</li>

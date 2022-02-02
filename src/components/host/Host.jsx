@@ -30,13 +30,13 @@ export default function hosting({ setData }) {
             </div>
           </div>
           <div className="rating">
-            {scale.map((level) =>
+            {scale.map((level, index) =>
               rating >= level ? (
-                <span>
+                <span key={index}>
                   <img src={pinkStar} alt="etoile rose" />
                 </span>
               ) : (
-                <span>
+                <span key={index}>
                   <img src={greyStar} alt="etoile grise" />
                 </span>
               )

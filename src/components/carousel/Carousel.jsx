@@ -1,5 +1,7 @@
 import React from 'react';
 import './carousel.scss';
+import Next from './../../assets/images/next.svg';
+import Previous from './../../assets/images/previous.svg';
 
 const Carousel = ({ setData }) => {
   return (
@@ -9,13 +11,10 @@ const Carousel = ({ setData }) => {
       </div>
       <div className="arrows">
         <div>
-          <img src={require('./../../assets/images/next.svg')} alt="next" />
+          <img src={Next} alt="next" />
         </div>
         <div>
-          <img
-            src={require('./../../assets/images/previous.svg')}
-            alt="previous"
-          />
+          <img src={Previous} alt="previous" />
         </div>
       </div>
     </>
