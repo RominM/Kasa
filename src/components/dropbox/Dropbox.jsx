@@ -1,9 +1,8 @@
 import './dropbox.scss';
 
 const Dropbox = () => {
-
   return (
-    <div className="dropbox" >
+    <div className="dropbox">
       <div className="dropbox-head">
         <span className="dropbox-head__title">Title</span>
       </div>
@@ -23,4 +22,3 @@ const Dropbox = () => {
 };
 
 export default Dropbox;
-

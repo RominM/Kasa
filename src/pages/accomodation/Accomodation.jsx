@@ -21,7 +21,7 @@ const Accomodation = () => {
           <Dropbox />
         </div>
         <div className="dropbox-right">
-          <Dropbox />
+          <Dropbox>{setData.description}</Dropbox>
         </div>
       </section>
     </>

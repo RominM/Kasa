@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Description() {
+export default function Content() {
   return <p className="text-content"></p>;
 }
