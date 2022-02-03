@@ -18,13 +18,16 @@ import './style/mediaQ.scss';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/apropos" element={<AboutUs />} />
-        <Route path="/logement/:id" element={<Accomodation />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <div className="page-container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/apropos" element={<AboutUs />} />
+          <Route path="/logement/:id" element={<Accomodation />} />
+          <Route path="/page-non-trouvee" element={<Error />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   </React.StrictMode>,

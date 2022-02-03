@@ -1,31 +1,34 @@
 import React from 'react';
-import { useParams } from 'react-router';
+import { Navigate, useParams } from 'react-router';
 import Slider from '../../components/slider/Slider';
 import Host from '../../components/host/Host';
 import Accordion from '../../components/accordion/Accordion';
 import './accomodation.scss';
-import data from '../../data/data.json';
+import accomodations from '../../data/data.json';
 
 const Accomodation = () => {
-  const DATA = useParams();
-  const accId = DATA.id;
+  const currentRouteParams = useParams();
+  const accomodationId = currentRouteParams.id;
 
-  const setData = data.find((acc) => acc.id === accId);
+  const currentAccomodation = accomodations.find((accomodation) => accomodation.id === accomodationId);
+if(!currentAccomodation) {
+  return <Navigate to="/page-non-trouvee" />
+}
 
   return (
     <>
-      <Slider setData={setData} />
-      <Host setData={setData} />
+      <Slider setData={currentAccomodation} />
+      <Host setData={currentAccomodation} />
       <section className="host--section">
         <div className="accordion-left">
           <Accordion title="description">
-            <p>{setData.description}</p>
+            <p>{currentAccomodation.description}</p>
           </Accordion>
         </div>
         <div className="accordion-right">
           <Accordion title="équipement">
             <ul>
-              {setData.equipments.map((equipment, index) => (
+              {currentAccomodation.equipments.map((equipment, index) => (
                 <li key={equipment + index}>{equipment}</li>
               ))}
             </ul>

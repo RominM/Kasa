@@ -1,7 +1,11 @@
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './header.scss';
 
 const Header = () => {
+  const underline = () => {
+    console.log('must be change underline')
+  }
+
   return (
     <header className="header">
       <Link to="/">
@@ -16,14 +20,25 @@ const Header = () => {
       <nav className="head-nav">
         <ul className="head-nav-ul">
           <li className="head-nav-li">
-            <Link to="/" className="head-nav-link">
+            <NavLink to="/" className="head-nav-link" onClick={underline}>
               Accueil
-            </Link>
+            </NavLink>
+            
+            {/* <NavLink
+            to="tasks"
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+          >
+            Tasks
+          </NavLink> */}
+
+
           </li>
           <li className="head-nav-li">
-            <Link to="/apropos" className="head-nav-link">
+            <NavLink to="/apropos" className="head-nav-link" onClick={underline}>
               A Propos
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -31,10 +31,9 @@ const Slider = ({ setData }) => {
               className={index === current ? 'slide active' : 'slide'}
               key={index}
             >
-              {index === current || (
+              {index === current && (
                 <img src={pic} alt="photos logement" key={index} />
               )}
-              ;
             </div>
           );
         })}
@@ -46,7 +45,7 @@ const Slider = ({ setData }) => {
             <img src={Next} alt="flêche suivant" />
           </div>
         </div>
-        <span className="counter">{1 + '/' + length}</span>
+        <span className="counter">{(current + 1) + '/' + length}</span>
       </div>
     </>
   );
