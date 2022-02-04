@@ -23,3 +23,12 @@
     margin-bottom: 200px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .not-found {
+    h1 {
+      font-size: 2vh;
+      padding: 30px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
   height: 168px;
   margin: 25px 0;
@@ -17,8 +17,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.2em;
+    font-size: 3.2vmax;
     color: #fff;
+  }
+  br {
+    display: none;
   }
 }
 .banner::before {
@@ -28,4 +31,23 @@
   height: 100%;
   background-color: #000;
   opacity: 0.3;
+}
+
+@media screen and (max-width: 1050px) {
+  .gimmick {
+    font-size: 7vmax;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    height: 105px;
+    border-radius: 10px;
+    .gimmick {
+      text-align: left;
+    }
+    br {
+      display: block;
+    }
+  }
 }

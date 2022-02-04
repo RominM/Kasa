@@ -1,3 +1,5 @@
-.container-dropbox {
-  margin: 5px 100px;
+@media screen and (max-width: 500px) {
+  .bannerAbout {
+    height: 150px;
+  }
 }

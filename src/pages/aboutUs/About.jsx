@@ -23,7 +23,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="banner">
+      <div className="banner bannerAbout">
         <img src={bannerAbout} alt="montagnes" />
       </div>
       <div className="container-accordion">

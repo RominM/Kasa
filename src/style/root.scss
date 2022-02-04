@@ -12,3 +12,21 @@
 .page-container {
   padding: 30px 250px 0 250px;
 }
+
+@media screen and (max-width: 1900px) {
+  .page-container {
+    padding: 30px 150px 0 150px;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .page-container {
+    padding: 30px 100px 0 100px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .page-container {
+    padding: 20px 45px 0 45px;
+  }
+}

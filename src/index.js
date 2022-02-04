@@ -12,7 +12,6 @@ import Error from './pages/error404/Error';
 // Style
 import './style/reset.scss';
 import './style/root.scss';
-import './style/mediaQ.scss';
 
 // render
 ReactDOM.render(
@@ -33,4 +32,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-

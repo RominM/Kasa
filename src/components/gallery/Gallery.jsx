@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './main.scss';
-import './mediaQ-main.scss';
 import accomodations from '../../data/data.json';
 
 /**

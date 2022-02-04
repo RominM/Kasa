@@ -1,11 +1,8 @@
 import { NavLink, Link } from 'react-router-dom';
-import { useState } from 'react';
-import './header.scss';
 import LogoKasa from './../../../assets/images/logo_kasa.jpg';
+import './header.scss';
 
 const Header = () => {
-  const [isActive, activeClassName] = useState();
-
   return (
     <header className="header">
       <Link to="/">

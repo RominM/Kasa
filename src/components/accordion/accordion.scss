@@ -66,3 +66,9 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .accordion {
+    height: 250px;
+  }
+}
