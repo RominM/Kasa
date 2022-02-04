@@ -1,6 +1,7 @@
 import React from 'react';
 import Accordion from './../../components/accordion/Accordion';
 import './about.scss';
+import bannerAbout from './../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
 
 const AboutUs = () => {
   const fiability = `Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -23,10 +24,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="banner">
-        <img
-          src={require('./../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png')}
-          alt="montagnes"
-        />
+        <img src={bannerAbout} alt="montagnes" />
       </div>
       <div className="container-accordion">
         <Accordion title="fiabilité">{fiability}</Accordion>

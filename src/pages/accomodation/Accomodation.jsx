@@ -6,19 +6,26 @@ import Accordion from '../../components/accordion/Accordion';
 import './accomodation.scss';
 import accomodations from '../../data/data.json';
 
+
+
 const Accomodation = () => {
   const currentRouteParams = useParams();
   const accomodationId = currentRouteParams.id;
 
-  const currentAccomodation = accomodations.find((accomodation) => accomodation.id === accomodationId);
-if(!currentAccomodation) {
-  return <Navigate to="/page-non-trouvee" />
-}
+  // init accomodation
+  const currentAccomodation = accomodations.find(
+    (accomodation) => accomodation.id === accomodationId
+  );
+
+  // if wrong accomodaton URL
+  if (!currentAccomodation) {
+    return <Navigate to="/not-found" />;
+  }
 
   return (
     <>
-      <Slider setData={currentAccomodation} />
-      <Host setData={currentAccomodation} />
+      <Slider currentAccomodation={currentAccomodation} />
+      <Host currentAccomodation={currentAccomodation} />
       <section className="host--section">
         <div className="accordion-left">
           <Accordion title="description">

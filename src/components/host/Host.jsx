@@ -4,18 +4,28 @@ import './host.scss';
 import pinkStar from './../../assets/images/pink_star.svg';
 import greyStar from './../../assets/images/grey_star.svg';
 
-export default function hosting({ setData }) {
+/**
+ * @param { String } title
+ * @param { String } location
+ * @param { String[] } tag
+ * @param { String } name
+ * @param { String } picture
+ * @returns { Object {host} }
+ */
+
+const Host = ({ currentAccomodation }) => {
+  // max rating scale as until 5
   const scale = [1, 2, 3, 4, 5];
-  const rating = setData.rating;
+  const rating = currentAccomodation.rating;
 
   return (
     <section>
       <div className="hosting">
         <div>
-          <h3>{setData.title}</h3>
-          <span className="location">{setData.location}</span>
+          <h3>{currentAccomodation.title}</h3>
+          <span className="location">{currentAccomodation.location}</span>
           <ul className="tags">
-            {setData.tags.map((tag) => (
+            {currentAccomodation.tags.map((tag) => (
               <li className="tag" key={tag}>
                 {tag}
               </li>
@@ -24,9 +34,9 @@ export default function hosting({ setData }) {
         </div>
         <div>
           <div className="host">
-            <span className="host-name">{setData.host.name}</span>
+            <span className="host-name">{currentAccomodation.host.name}</span>
             <div className="host-pic">
-              <img src={setData.host.picture} alt="avatar hote" />
+              <img src={currentAccomodation.host.picture} alt="avatar hote" />
             </div>
           </div>
           <div className="rating">
@@ -46,4 +56,6 @@ export default function hosting({ setData }) {
       </div>
     </section>
   );
-}
+};
+
+export default Host;

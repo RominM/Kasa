@@ -3,16 +3,19 @@ import './slider.scss';
 import Next from './../../assets/images/next.svg';
 import Previous from './../../assets/images/previous.svg';
 
-const Slider = ({ setData }) => {
-  const pics = setData.pictures;
+const Slider = ({ currentAccomodation }) => {
+  const pics = currentAccomodation.pictures;
   const length = pics.length;
 
+  // handle slider
   const [current, setCurrent] = useState(0);
 
+  // this is the last image ? Then if you click, go back to the first
   const nextPic = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
+  // this is the first image ? Then if you click, go back to the last
   const prevPic = () => {
     setCurrent(current === length - 1 ? 0 : current - 1);
   };
