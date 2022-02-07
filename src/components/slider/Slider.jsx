@@ -13,20 +13,12 @@ const Slider = ({ currentAccomodation }) => {
 
   // this is the last image ? Then if you click, go back to the first
   const nextPic = () => {
-    console.log('before click NEXT ' + current);
-    console.log('length is ' + length);
-
     setCurrent(current === length - 1 ? 0 : current + 1);
-    console.log('after click NEXT ' + current);
   };
 
   // this is the first image ? Then if you click, go back to the last
   const prevPic = () => {
-    console.log('before click PREVIOUS ' + current);
-    console.log('length is ' + length);
-
-    setCurrent(current === length - 1 ? 0 : current - 1);
-    console.log('after click PREVIOUS ' + current);
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
   if (!Array.isArray(pics) || length <= 0) {
