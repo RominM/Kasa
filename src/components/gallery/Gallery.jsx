@@ -4,10 +4,12 @@ import './main.scss';
 import accomodations from '../../data/data.json';
 
 /**
- * @param { Integer } id
- * @param { String[] } cover
- * @param { String } title
- * @returns { Object{accomodations}}
+ * @function Gallery
+ * @extends Component
+ * @param { Integer } props id: used for route
+ * @param { String[] } props cover: pic in the card
+ * @param { String } props title: title of card
+ * @returns { JSX}
  */
 
 const Gallery = () => {

@@ -5,12 +5,14 @@ import pinkStar from './../../assets/images/pink_star.svg';
 import greyStar from './../../assets/images/grey_star.svg';
 
 /**
- * @param { String } title
- * @param { String } location
- * @param { String[] } tag
- * @param { String } name
- * @param { String } picture
- * @returns { Object {host} }
+ * @function Host
+ * @extends Componant
+ * @param { String } props title: accomodation title
+ * @param { String } props location: accomodation location
+ * @param { String[] } props tags: accomodation tags
+ * @param { String } props name: accomodation name
+ * @param { String } props picture: host picture
+ * @returns { JSX Object{host} }
  */
 
 const Host = ({ currentAccomodation }) => {

@@ -1,6 +1,14 @@
 import './accordion.scss';
 import { useState } from 'react';
 
+/**
+ * @function Accordion
+ * @extends Componant
+ * @param { String } props title
+ * @param { String } props children
+ * @returns {JSX}
+ */
+
 const Accordion = (props) => {
   const children = props.children;
   const title = props.title.charAt(0).toUpperCase() + props.title.slice(1);
