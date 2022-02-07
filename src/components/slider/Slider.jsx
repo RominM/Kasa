@@ -23,7 +23,6 @@ const Slider = ({ currentAccomodation }) => {
   if (!Array.isArray(pics) || length <= 0) {
     return null;
   }
-  console.log(current);
 
   return (
     <>
@@ -48,7 +47,7 @@ const Slider = ({ currentAccomodation }) => {
             <img src={Next} alt="flêche suivant" />
           </div>
         </div>
-        <span className="counter">{(current + 1) + '/' + length}</span>
+        <span className="counter">{current + 1 + '/' + length}</span>
       </div>
     </>
   );
