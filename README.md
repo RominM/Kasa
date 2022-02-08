@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Kasa
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a4f9b28-e73c-408e-8803-04a6ad5b550b/deploy-status)](https://app.netlify.com/sites/rominmanogil-p11-kasa/deploys)
+
+If you want to see the deployement 👉 https://rominmanogil-p11-kasa.netlify.app/ 👈
+The 404 page and refresh doesn't work with this.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
