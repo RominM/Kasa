@@ -9,7 +9,6 @@ const Slider = ({ currentAccomodation }) => {
 
   // handle slider
   const [current, setCurrent] = useState(0);
-  console.log('Current image is ' + current);
 
   // this is the last image ? Then if you click, go back to the first
   const nextPic = () => {
@@ -40,7 +39,7 @@ const Slider = ({ currentAccomodation }) => {
             </div>
           );
         })}
-        <div className="arrows">
+        <div className={length > 1 ? 'arrows' : 'arrows-none'}>
           <div className="arrow lft" onClick={prevPic}>
             <img src={Previous} alt="flêche précedent" />
           </div>

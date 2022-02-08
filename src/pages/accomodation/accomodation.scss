@@ -10,3 +10,17 @@
     width: 50%;
   }
 }
+
+@media screen and (max-width: 790px) {
+  .host--section {
+    flex-direction: column;
+    .accordion-left {
+      margin: auto;
+      width: 100%;
+    }
+    .accordion-right {
+      margin: auto;
+      width: 100%;
+    }
+  }
+}

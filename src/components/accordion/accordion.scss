@@ -38,7 +38,6 @@
     width: 25px;
     height: 25px;
     transform: translate(-50%, -50%);
-    background: url(./../../assets/images/arrow.svg) no-repeat;
     background-position: right;
     background-size: contain;
     transform: rotate(270deg);
@@ -64,11 +63,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .accordion {
-    height: 250px;
   }
 }

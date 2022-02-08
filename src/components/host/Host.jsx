@@ -34,7 +34,7 @@ const Host = ({ currentAccomodation }) => {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="host-parent">
           <div className="host">
             <span className="host-name">{currentAccomodation.host.name}</span>
             <div className="host-pic">
